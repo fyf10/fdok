@@ -1,4 +1,4 @@
-name: 将DockerHub镜像复制到GHCR.IO-指定digest
+name: 将DockerHub镜像复制到GHCR.IO-指定digest1
 
 on:
   workflow_dispatch:
