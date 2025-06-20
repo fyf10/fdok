@@ -10,7 +10,7 @@ on:
       digest:
         description: "Docker识别码"
         required: false
-        default: '0
+        default: '0'
       tag:
         description: 'Docker 镜像标签（默认：latest）'
         required: false
