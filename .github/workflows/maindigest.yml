@@ -45,7 +45,7 @@ jobs:
       
       - name: 为GitHub容器注册表标记Docker镜像
         run: |
-          docker tag ${{ inputs.dockerhub_image }}:${{ inputs.tag }} ${{ env.REGISTRY }}/${{ env.ACTOR_LOWER }}/${{ env.IMAGE_NAME }}:${{ inputs.tag }}
+          docker tag ${{ inputs.dockerhub_image }}@sha256:${{inputs.digest}} ${{ env.REGISTRY }}/${{ env.ACTOR_LOWER }}/${{ env.IMAGE_NAME }}:${{ inputs.tag }}
       
       - name: 将Docker镜像推送到GitHub容器注册表
         run: |
